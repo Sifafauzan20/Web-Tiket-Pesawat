@@ -1,0 +1,338 @@
+  @font-face {
+    font-family: "airstrike";
+    src: url(Fonts/airstrike.ttf) format('truetype');;
+  }
+
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display:block;
+}
+
+main {
+  margin-top: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333; /* Ganti sesuai kebutuhan Anda */
+  color: white; /* Ganti sesuai kebutuhan Anda */
+  text-align: center;
+  line-height: 50px;
+}
+
+.logo-img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+.TextHeader:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+.profile-card {
+  max-width: 1050px;
+  width: 90%; /* Menggunakan persentase untuk responsivitas */
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+ /* Menggunakan relative agar dapat disusun berdasarkan posisi normal di dalam flow dokumen */
+
+  /* Tambahkan style untuk membuat konten lebih responsif */
+  @media only screen and (max-width: 768px) {
+    width: 100%; /* Ubah lebar menjadi 100% pada layar dengan lebar kurang dari atau sama dengan 768px */
+  }
+}
+
+
+/* Media query untuk responsivitas */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 100%; /* Mengisi lebar 100% pada perangkat dengan lebar 768px atau lebih kecil */
+    margin-left: 0; /* Reset margin-left agar tidak terlalu terpental ke kiri pada perangkat kecil */
+  }
+}
+
+
+body {
+  padding-top: 56px; /* Adjusted padding-top to account for fixed header */
+}
+
+.header-transparent {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transisi untuk warna latar belakang dan teks */
+}
+
+.header-black {
+  background-color: #000000; /* Warna latar belakang hitam ketika di-scroll */
+  color: #ffffff; /* Warna teks putih ketika di-scroll */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transisi untuk warna latar belakang dan teks */
+}
+
+
+#rolling-text {
+  animation: rollTextAnimation 3s ease-in-out infinite; /* Sesuaikan durasi dan jenis animasi */
+}
+
+@keyframes rollTextAnimation {
+  0% {
+      transform: translateY(100%);
+  }
+  50% {
+      transform: translateY(50%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.nav-link-wrapper {
+  margin-right: 20px; /* Sesuaikan dengan margin yang diinginkan */
+}
+
+.icon-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.icon-link:hover {
+  color: #CCCCCC; /* Warna saat hover */
+  text-decoration: none; /* Hapus underline saat hover */
+}
+
+.logout-link:hover {
+  color: #CCCCCC; /* Warna saat hover */
+  text-decoration: none; /* Hapus underline saat hover */
+}
+
+.user-avatar {
+  width: 15px;
+  border-radius: 50%;
+  margin-left: 2px;
+}
+
+
+body {
+  background-color: #f8f9fa;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px; /* Sesuaikan sesuai kebutuhan Anda */
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.eye-icon img {
+  width: 20px; /* Sesuaikan ukuran gambar */
+  height: auto; /* Sesuaikan ukuran gambar */
+}
+
+.password-warning,
+.password-mismatch-warning {
+  color: red;
+  margin-top: 10px; /* Sesuaikan jarak di atas */
+  position: absolute;
+  bottom: -20px; /* Sesuaikan jarak di bawah */
+  left: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link-wrapper {
+  margin-right: 15px;
+}
+
+.requires-login {
+  display: none;
+}
+
+.login-box {
+  display: flex;
+  align-items: center; /* Mengatur item agar berada di tengah vertikal */
+  color: inherit;
+}
+
+.login-box:hover {
+  background-color: #7575753e; /* Warna latar belakang ketika dihover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan ketika dihover */
+}
+
+.login-box:hover .user-avatar {
+  filter: invert(1); /* Mengubah warna gambar menjadi hitam (grayscale) saat dihover */
+}
+
+.login-box a {
+  color: inherit; /* Mengambil warna default dari elemen */
+  text-decoration: none; /* Menghapus garis bawah tautan */
+}
+
+
+.login-link {
+  margin-right: 10px; /* Jarak antara text "Login" dan avatar */
+  text-decoration: none;
+  color: inherit; /* Mengambil warna default dari elemen */
+  transition: color 0.3s; /* Transisi perubahan warna */
+}
+
+.login-box:hover .login-link {
+  color: #555; /* Warna text ketika dihover */
+}
+
+.table-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Tambahkan garis pada tabel */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 10px solid #ffffffb5;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #ffffffb5;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px; /* Adjust the maximum width as needed */
+  width: 100%;
+  margin: none;
+  padding: 20px;
+  border: 1px solid #ddd; /* Optional border for container */
+  font-size: small;
+}
+
+.jumbotron-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.col-sm-2,
+.col-sm-8 {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border: none;
+}
+
+th,
+td {
+  border: none; /* Remove borders for cells */
+  padding: 8px;
+  text-align: left;
+}
+
+
+h1,
+button {
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+@media print {
+  @page {
+      size: legal;
+      margin: none;
+  }
+
+  table.table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+  table.table-bordered th,
+  table.table-bordered td {
+      white-space: normal !important;
+  }
+}
+
+.pilih_kelas {
+  color: black;
+}
+
