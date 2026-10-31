@@ -2,6 +2,8 @@
 
 Aplikasi web pemesanan tiket pesawat sederhana berbasis PHP Native dan MySQL.
 
+![Preview Aplikasi AyoTerbang](screenshots/preview.jpg)
+
 ## Fitur
 - Pencarian jadwal penerbangan
 - Pemilihan kelas & kursi penerbangan
@@ -21,3 +23,4 @@ Aplikasi web pemesanan tiket pesawat sederhana berbasis PHP Native dan MySQL.
 4. Buat database baru dengan nama `ERD`.
 5. Import file SQL yang ada pada direktori `db/ERD.sql` ke dalam database `ERD`.
 6. Buka browser dan akses aplikasi melalui `http://localhost/WebTiketPesawat`.
+
